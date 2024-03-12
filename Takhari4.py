@@ -173,13 +173,13 @@ logo=("""
 
 █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█\033[1;37m
  
-  \033[1;33mGithub   : \033[1;33mHassanKarimi630
-  \033[1;35mFacebook :  \033[1;32mHAS SAN
-  \033[1;36mModifier :  \033[1;36mHassan Karimi 
-  \033[1;37mTeam     :  \037[1;31mH-Tech
-  \033[1;33mversion  : \033[1;39m 1.10
+        \033[1;33mGithub   : \033[1;33mHassanKarimi630
+        \033[1;35mFacebook :  \033[1;32mHAS SAN
+        \033[1;36mModifier :  \033[1;36mHassan Karimi 
+        \033[1;37mTeam     :  \037[1;31mH-Tech
+        \033[1;33mversion  : \033[1;39m 1.10
 
-█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█                                        /033[1;37m""")
+█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█/033[1;37m""")
 def lines():
           print(f'\033[0;95m▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\033[0;33m') 
 loop = 0
@@ -466,7 +466,7 @@ def rcrack(uid,pwx,tl):
         for ps in pwx:
             pro = random.choice(ugen)
             session = requests.Session()
-            sys.stdout.write(f'\r[\037[1;32mHassan\033[1;97m] %s|\33[1;32mOK:- %s \r'%(loop,len(oks)));sys.stdout.flush()
+            sys.stdout.write(f'\r[\033[1;97m Hassan✓ \033[1;97m] %s|\33[1;32mOK:- %s \r'%(loop,len(oks)));sys.stdout.flush()
             free_fb = session.get('https://free.facebook.com').text
             log_data = {
                 "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
