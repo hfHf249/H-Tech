@@ -175,8 +175,8 @@ logo=("""
         \033[1;33mGithub   : \033[1;33mHassanKarimi630
         \033[1;35mFacebook :  \033[1;32mHAS SAN
         \033[1;36mModifier :  \033[1;36mHassan Karimi 
-        \033[1;37mTeam     :  \037[1;31m H-Tech
-        \033[1;33mversion  : \033[1;39m 1.12
+        \033[1;37mTeam     :  \037[1;31m  H-Tech
+        \033[1;33mversion  : \033[1;39m  1.13
 
 █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█                                                  /033[1;37m""")
 def lines():
